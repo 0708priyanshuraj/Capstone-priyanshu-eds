@@ -37,6 +37,7 @@
 /* description */
 .custom-card p {
     margin-bottom: 20px;
+    font-size: 14px;
 }
 
 .custom-card p:last-child {
