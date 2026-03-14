@@ -1,58 +1,55 @@
 .commonheading h2 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 36px;
-  color: #202020;
-  margin: 27px 0 13.5px;
-  position: relative;
-  display: inline-block;
-  font-weight: 300; 
-  padding-bottom: 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 36px;
+    color: #202020;
+    margin: 27px 0 13.5px;
+    position: relative;
+    display: inline-block;
+    font-weight: 300;
+    padding-bottom: 20px;
 }
 
 /* yellow underline */
 .commonheading h2::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 120px;
-  height: 3px;
-  background-color: #ffd800;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 120px;
+    height: 3px;
+    background-color: #ffd800;
 }
 
 /* ================= Tablet ================= */
 
-@media (width <= 1024px){
-  .commonheading h2{
-    font-size: 30px;
-    margin: 24px 0 12px;
-    padding-bottom: 16px;
-  }
+@media (width <= 1024px) {
+    .commonheading h2 {
+        font-size: 30px;
+        margin: 24px 0 12px;
+        padding-bottom: 16px;
+    }
 
-  .commonheading h2::after{
-    width: 100px;
-    height: 3px;
-  }
-
+    .commonheading h2::after {
+        width: 100px;
+        height: 3px;
+    }
 }
-
 
 /* ================= Mobile ================= */
 
-@media (width <= 600px){
- .commonheading{
-    width:100%;
-    text-align:left;
-  }
+@media (width <= 600px) {
+    .commonheading {
+        width: 100%;
+        text-align: left;
+    }
 
-  .commonheading h2{
-    width:100%;
-    text-align:left;
-  }
+    .commonheading h2 {
+        width: 100%;
+        text-align: left;
+    }
 
-  .commonheading h2::after{
-    left:0;
-    right:auto;
-  }
-
+    .commonheading h2::after {
+        left: 0;
+        right: auto;
+    }
 }
