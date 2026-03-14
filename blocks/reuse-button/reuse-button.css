@@ -1,0 +1,22 @@
+/* button container */
+
+.reuse-button-container .button-wrapper {
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+/* button style */
+
+.reuse-button .button.secondary {
+    background-color: #ffe100;
+    color: #131313;
+    border: none;
+    border-radius: 0;
+    padding: 16px 32px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    font-family: roboto, roboto-fallback, sans-serif;
+}
