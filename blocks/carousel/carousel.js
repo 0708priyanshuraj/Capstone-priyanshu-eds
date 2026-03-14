@@ -1,7 +1,6 @@
 export default function decorate(block) {
-
   const slides = [...block.children].filter(
-    (el) => !el.classList.contains('button-action-container') && el.tagName !== 'UL'
+    (el) => !el.classList.contains('button-action-container') && el.tagName !== 'UL',
   );
 
   if (slides.length === 1) {
@@ -12,7 +11,6 @@ export default function decorate(block) {
   const dots = document.createElement('ul');
 
   slides.forEach((slide, i) => {
-
     const li = document.createElement('li');
 
     if (i === 0) {
@@ -21,7 +19,6 @@ export default function decorate(block) {
     }
 
     dots.append(li);
-
   });
 
   block.append(dots);
@@ -43,7 +40,6 @@ export default function decorate(block) {
   let current = 0;
 
   function updateCarousel() {
-
     slides.forEach((slide, i) => {
       slide.classList.toggle('carousel-active', i === current);
     });
@@ -51,7 +47,6 @@ export default function decorate(block) {
     indicators.forEach((dot, i) => {
       dot.classList.toggle('list-active', i === current);
     });
-
   }
 
   function showPrev() {
@@ -75,5 +70,4 @@ export default function decorate(block) {
   indicators.forEach((dot, i) => {
     dot.addEventListener('click', () => goToSlide(i));
   });
-
 }

@@ -12,8 +12,7 @@ function toggleAllNavSections(sections, expanded = false) {
 }
 
 function toggleMenu(nav, navSections, forceExpanded = null) {
-  const expanded =
-    forceExpanded !== null ? !forceExpanded : nav.getAttribute('aria-expanded') === 'true';
+  const expanded = forceExpanded !== null ? !forceExpanded : nav.getAttribute('aria-expanded') === 'true';
 
   const button = nav.querySelector('.nav-hamburger button');
 
@@ -25,12 +24,11 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
 
   button.setAttribute(
     'aria-label',
-    expanded ? 'Open navigation' : 'Close navigation'
+    expanded ? 'Open navigation' : 'Close navigation',
   );
 }
 
 export default async function decorate(block) {
-
   /* =====================
      LOAD NAV FRAGMENT
   ====================== */
@@ -69,22 +67,19 @@ export default async function decorate(block) {
     navSections
       .querySelectorAll(':scope .default-content-wrapper > ul > li')
       .forEach((navSection) => {
-
         if (navSection.querySelector('ul')) {
           navSection.classList.add('nav-drop');
         }
 
         navSection.addEventListener('click', () => {
-
           if (isDesktop.matches) {
-            const expanded =
-              navSection.getAttribute('aria-expanded') === 'true';
+            const expanded = navSection.getAttribute('aria-expanded') === 'true';
 
             toggleAllNavSections(navSections);
 
             navSection.setAttribute(
               'aria-expanded',
-              expanded ? 'false' : 'true'
+              expanded ? 'false' : 'true',
             );
           }
         });
@@ -113,9 +108,7 @@ export default async function decorate(block) {
 
   toggleMenu(nav, navSections, isDesktop.matches);
 
-  isDesktop.addEventListener('change', () =>
-    toggleMenu(nav, navSections, isDesktop.matches)
-  );
+  isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
 
   /* =====================
      NAV WRAPPER
@@ -133,13 +126,10 @@ export default async function decorate(block) {
   ====================== */
 
   window.addEventListener('scroll', () => {
-
     if (window.scrollY > 0) {
       nav.classList.add('scrolled');
     } else {
       nav.classList.remove('scrolled');
     }
-
   });
-
 }
