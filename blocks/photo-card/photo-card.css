@@ -41,7 +41,7 @@
 /* Contributor Name */
  
 .photo-card h3 {
-  font-family: "Asar", Georgia, "Times New Roman", serif;
+  font-family: Asar, Georgia, "Times New Roman", serif;
   font-size: 24px;
   font-weight: normal;
   color: #202020;
@@ -59,8 +59,9 @@
   color: #202020;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
 }
+
 /* Social icon container */
 
 .photo-card h4 {
@@ -89,40 +90,45 @@
 .photo-card h4 .icon svg {
   width: 18px;
   height: 18px;
-  fill: #ffffff;
+  fill: #fff;
 }
 
 .photo-card h4 .icon svg path {
-  fill: #ffffff;
+  fill: #fff;
 }
+
 /* Hover effect */
 .photo-card h4 .icon:hover svg {
   opacity: 0.7;
 }
+
 /* Hover effect */
 .photo-card p .icon:hover svg {
   opacity: 0.7;
 }
+
 /* Responsive layout */
-@media (max-width: 992px) {
+@media (width <= 992px) {
   .photo-card.block {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
 }
  
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .photo-card.block {
     grid-template-columns: 1fr;
   }
 }
+
 .default-content-wrapper h1{
-  font-family: "Asar", Georgia, "Times New Roman", serif;
+  font-family: Asar, Georgia, "Times New Roman", serif;
   font-size: 36px;
   color: #202020;
   font-weight: normal;
   margin: 40px 0 6px 10px;
 }
+
 .default-content-wrapper p em {
   font-size: 18px;
 }

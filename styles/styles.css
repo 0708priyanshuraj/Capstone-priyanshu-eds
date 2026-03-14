@@ -320,7 +320,8 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
-/*---------------------------------------------------*/
+
+/* --------------------------------------------------- */
 h3#where-do-you-want-to-go {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 24px;
@@ -336,16 +337,15 @@ h3#where-do-you-want-to-go {
   font-weight: 400;
   margin: 27px 0 13.5px;
 }
+
 /* Adventures heading */
 .default-content-wrapper h1 {
-  font-family: "Asar", Georgia, "Times New Roman", serif;
+  font-family: Asar, Georgia, "Times New Roman", serif;
   font-size: 40px;
   font-weight: normal;
   color: #202020;
- 
   margin-top: 27px;
   margin-bottom: 13.5px;
   margin-left: 0;
- 
   line-height: 1.2;
 }

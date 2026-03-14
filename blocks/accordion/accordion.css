@@ -1,148 +1,167 @@
 /* FAQ section container */
 .section.accordion-container {
-  max-width: 700px;      /* match paragraph width */
-  margin-left: 80px;     /* align with image */
-  margin-top: -80px;
-  padding: 0;
-  font-family: Helvetica, Arial, sans-serif;
+    max-width: 700px; /* match paragraph width */
+    margin-left: 80px; /* align with image */
+    margin-top: -80px;
+    padding: 0;
+    font-family: helvetica, arial, sans-serif;
 }
+
 /* remove default arrow */
+
 .accordion-item summary {
-  list-style: none;
+    list-style: none;
 }
+
 .accordion-item summary::-webkit-details-marker {
-  display: none;
+    display: none;
 }
+
 /* accordion row */
+
 .accordion-item {
-  border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
 }
+
 /* accordion label */
+
 .accordion-label {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  padding: 3px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 3px 0;
 }
+
 /* question text */
+
 .accordion-label h3 {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 100;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #202020;
-  font-style:  Helvetica, Arial, sans-serif;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #202020;
+    font-family: helvetica, arial, sans-serif;
 }
+
 /* plus icon */
+
 .accordion-label::after {
-  content: "+";
-  font-size: 30px;
-  font-weight: 200;
-  color: #202020;
-  transition: all 0.25s ease;
+    content: "+";
+    font-size: 30px;
+    font-weight: 200;
+    color: #202020;
+    transition: all 0.25s ease;
 }
+
 /* minus when open */
+
 .accordion-item[open] .accordion-label::after {
-  content: "−";
+    content: "−";
 }
+
 /* accordion content */
+
 .accordion-content {
-  padding: 0 0 30px 0;
-  max-width: 750px;
+    padding: 0 0 30px;
+    max-width: 750px;
 }
+
 /* paragraph */
+
 .accordion-content p {
-  margin: 0;
-  font-size: 12px;
-  line-height: 1.7;
-  color: #444;
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #444;
 }
+
 /* FAQ IMAGE SECTION */
+
 .section.image-text-container {
-  max-width: 1200px;
-  margin: 0 auto 60px auto;
-  padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
 }
+
 /* image wrapper */
+
 .section.image-text-container picture {
-  display: block;
-  margin-bottom: 40px;
+    display: block;
+    margin-bottom: 40px;
 }
+
 /* image */
+
 .section.image-text-container picture img {
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
-  display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
 }
+
 /* ================= Tablet ================= */
 
-@media (width <= 1024px){
+@media (width <= 1024px) {
+    .section.accordion-container {
+        max-width: 600px;
+        margin-left: 40px;
+        margin-top: -60px;
+    }
 
-  .section.accordion-container{
-    max-width:600px;
-    margin-left:40px;
-    margin-top:-60px;
-  }
+    .accordion-label h3 {
+        font-size: 15px;
+    }
 
-  .accordion-label h3{
-    font-size:15px;
-  }
+    .accordion-content p {
+        font-size: 13px;
+    }
 
-  .accordion-content p{
-    font-size:13px;
-  }
+    .accordion-label::after {
+        font-size: 26px;
+    }
 
-  .accordion-label::after{
-    font-size:26px;
-  }
-
-  .section.image-text-container picture img{
-    max-width:800px;
-  }
-
+    .section.image-text-container picture img {
+        max-width: 800px;
+    }
 }
-
 
 /* ================= Mobile ================= */
 
-@media (width <= 600px){
+@media (width <= 600px) {
+    .section.accordion-container {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
 
-  .section.accordion-container{
-    max-width:100%;
-    margin-left:0;
-    margin-top:20px;
-  }
+    .accordion-label {
+        padding: 8px 0;
+    }
 
-  .accordion-label{
-    padding:8px 0;
-  }
+    .accordion-label h3 {
+        font-size: 14px;
+    }
 
-  .accordion-label h3{
-    font-size:14px;
-  }
+    .accordion-content {
+        padding-bottom: 20px;
+    }
 
-  .accordion-content{
-    padding-bottom:20px;
-  }
+    .accordion-content p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
 
-  .accordion-content p{
-    font-size:12px;
-    line-height:1.6;
-  }
+    .accordion-label::after {
+        font-size: 22px;
+    }
 
-  .accordion-label::after{
-    font-size:22px;
-  }
+    .section.image-text-container {
+        padding: 0 15px;
+    }
 
-  .section.image-text-container{
-    padding:0 15px;
-  }
-
-  .section.image-text-container picture img{
-    max-width:100%;
-  }
-
+    .section.image-text-container picture img {
+        max-width: 100%;
+    }
 }
