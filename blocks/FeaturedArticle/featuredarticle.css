@@ -4,6 +4,14 @@
   display: grid;
   grid-template-columns: 55% 45%;
   align-items: stretch;
+  min-height: 520px; /* ensures both columns have height */
+}
+
+/* image container */
+
+.featuredarticle > div > div:first-child {
+  overflow: hidden;
+  height: 100%;
 }
 
 /* image */
@@ -16,17 +24,14 @@
   display: block;
 }
 
-/* image container */
-
-.featuredarticle > div > div:first-child {
-  overflow: hidden;
-}
-
 /* text container */
 
 .featuredarticle > div > div:last-child {
   background: #f2f2f2;
   padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* small heading */
@@ -34,19 +39,21 @@
 .featuredarticle p:first-child {
   color: #202020;
   font-size: 18px;
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
   margin: 0 0 13.5px 0;
   font-weight: 400;
 }
 
 /* main title */
+
 .featuredarticle h2 {
   color: #202020;
   font-size: 36px;
-  font-family: Asar, Georgia, "Times New Roman", serif;
+  font-family: Asar,Georgia,"Times New Roman",serif;
   margin: 18px 0;
   font-weight: 400;
 }
+
 /* description */
 
 .featuredarticle p:nth-of-type(2) {
@@ -57,15 +64,6 @@
 
 /* button */
 
-.featuredarticle .button-wrapper a {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 14px 28px;
-  background: #ffd500;
-  color: #000;
-  text-decoration: none;
-  font-weight: 600;
-}
 .featuredarticle .button-wrapper a,
 .featuredarticle .button-wrapper a:visited,
 .featuredarticle .button-wrapper a:hover,
@@ -73,7 +71,7 @@
 .featuredarticle .button-wrapper a:focus {
   background: #FFEA00;
   color: #202020;
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   font-weight: 500;
   padding: 14px 35px;
@@ -82,17 +80,25 @@
   border-radius: 0;
   display: inline-block;
   width: fit-content;
+  margin-top: 25px;
 }
+
 /* mobile */
 
 @media (max-width: 768px) {
 
-.featuredarticle > div {
-  grid-template-columns: 1fr;
-}
+  .featuredarticle > div {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
 
-.featuredarticle > div > div:last-child {
-  padding: 30px;
-}
+  .featuredarticle picture,
+  .featuredarticle img {
+    height: auto;
+  }
+
+  .featuredarticle > div > div:last-child {
+    padding: 30px;
+  }
 
 }
