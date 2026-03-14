@@ -30,7 +30,7 @@
 
 /* card body */
 .cards-card-body {
-    padding: -3px;
+    padding: 0;
     text-align: left;
 }
 
@@ -61,11 +61,6 @@
     margin: 0;
 }
 
-/* remove gap above text */
-.cards-card-body {
-    padding-top: 0;
-}
-
 /* alignment fix */
 .cards-card-body h3 strong {
     margin: 0;
@@ -77,6 +72,7 @@
     color: inherit;
     font-weight: 700;
 }
+
 /* responsive layout */
 
 @media (width <= 1200px) {
