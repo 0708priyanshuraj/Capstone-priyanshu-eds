@@ -1,0 +1,64 @@
+/* layout */
+
+.image-block-card.block > div {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    gap: 40px;
+}
+
+/* image */
+
+.image-block-card picture,
+.image-block-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* content */
+
+.image-block-card.block > div > div:last-child {
+    padding: 20px 0;
+}
+
+/* heading */
+
+.image-block-card h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 36px;
+    color: #202020;
+    margin: 27px 0 13.5px;
+    font-weight: 300;
+}
+
+/* description */
+
+.image-block-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* button */
+
+.image-block-card .button.secondary {
+    background-color: #ffd800;
+    color: #131313;
+    border: none;
+    border-radius: 0;
+    padding: 14px 30px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* responsive */
+
+@media (width <= 768px) {
+    .image-block-card.block > div {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
