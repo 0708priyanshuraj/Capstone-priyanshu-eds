@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Asar&family=Source+Sans+Pro:wght@400;600&display=swap');
+ 
+ 
+/* Section container */
+ 
+.photo-card-wrapper {
+  max-width: 1200px;
+  margin: 80px auto;
+}
+ 
+ 
+/* Grid layout */
+ 
+.photo-card.block {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+  text-align: center;
+}
+ 
+ 
+/* Each contributor card */
+ 
+.photo-card.block > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+ 
+/* Contributor Image */
+ 
+.photo-card picture img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+ 
+ 
+/* Contributor Name */
+ 
+.photo-card h3 {
+  font-family: "Asar", Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: normal;
+  color: #202020;
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+ 
+ 
+/* Contributor Role */
+ 
+.photo-card h5 {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #202020;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+/* Social icon container */
+
+.photo-card h4 {
+  background: #ece9e9;
+  padding: 8px 18px;
+  display: inline-flex;
+  gap: 22px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Icon wrapper */
+
+.photo-card h4 .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* SVG icons */
+
+.photo-card h4 .icon svg {
+  width: 18px;
+  height: 18px;
+  fill: #ffffff;
+}
+
+.photo-card h4 .icon svg path {
+  fill: #ffffff;
+}
+/* Hover effect */
+.photo-card h4 .icon:hover svg {
+  opacity: 0.7;
+}
+/* Hover effect */
+.photo-card p .icon:hover svg {
+  opacity: 0.7;
+}
+/* Responsive layout */
+@media (max-width: 992px) {
+  .photo-card.block {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+ 
+@media (max-width: 600px) {
+  .photo-card.block {
+    grid-template-columns: 1fr;
+  }
+}
+.default-content-wrapper h1{
+  font-family: "Asar", Georgia, "Times New Roman", serif;
+  font-size: 36px;
+  color: #202020;
+  font-weight: normal;
+  margin: 40px 0 6px 10px;
+}
+.default-content-wrapper p em {
+  font-size: 18px;
+}

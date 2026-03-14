@@ -9,7 +9,7 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 :root {
   /* colors */
   --background-color: white;
@@ -322,4 +322,33 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+/*---------------------------------------------------*/
+h3#where-do-you-want-to-go {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  color: #202020;
+  margin: 10px 0 2px;
+  font-weight: 400;
+}
+
+#magazine {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 40px;
+  color: #202020;
+  font-weight: 400;
+  margin: 27px 0 13.5px;
+}
+/* Adventures heading */
+.default-content-wrapper h1 {
+  font-family: "Asar", Georgia, "Times New Roman", serif;
+  font-size: 40px;
+  font-weight: normal;
+  color: #202020;
+ 
+  margin-top: 27px;
+  margin-bottom: 13.5px;
+  margin-left: 0;
+ 
+  line-height: 1.2;
 }
