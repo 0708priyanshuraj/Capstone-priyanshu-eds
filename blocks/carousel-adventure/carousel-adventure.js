@@ -9,7 +9,7 @@ export default function decorate(block) {
   slides.forEach((slide) => {
     const wrapper = document.createElement('div');
     wrapper.className = 'carousel-slide';
-    wrapper.append(slide.firstElementChild);
+    wrapper.append(slide);
     track.append(wrapper);
   });
 
