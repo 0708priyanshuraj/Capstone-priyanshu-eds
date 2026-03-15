@@ -132,6 +132,10 @@ export default async function decorate(block) {
   block.append(navWrapper);
   /* SIGN IN MODAL */
 
+  /* =====================
+   SIGN IN MODAL
+===================== */
+
   const signInLink = nav.querySelector(".nav-brand a");
 
   if (signInLink) {
@@ -168,7 +172,6 @@ export default async function decorate(block) {
       }
     });
   }
-
   const currentPath = window.location.pathname;
 
   nav.querySelectorAll(".nav-tools ul li a").forEach((link) => {
