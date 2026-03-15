@@ -119,6 +119,14 @@ header .nav-wrapper.scrolled nav .nav-sections {
     padding-left: 32px;
 }
 
+header nav .nav-brand .icon-us img {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-left: 8px;
+    top: 4px;
+}
+
 header .nav-wrapper.scrolled nav .nav-sections img {
     height: 36px;
 }
@@ -158,6 +166,9 @@ header nav .nav-tools ul > li > a {
     letter-spacing: 1px;
     padding: 8px 20px;
     white-space: nowrap;
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease;
 }
 
 /* ============================================
@@ -208,12 +219,6 @@ header nav .nav-brand a:hover {
     color: #ffea00;
 }
 
-header nav .nav-tools ul > li > a {
-    transition:
-        background-color 0.25s ease,
-        color 0.25s ease;
-}
-
 header nav .nav-tools ul > li > a:hover,
 header nav .nav-tools ul > li > a:active,
 header nav .nav-tools ul > li > a.active {
@@ -258,19 +263,12 @@ header nav .nav-hamburger {
     visibility: hidden;
 }
 
-header nav .nav-brand .icon-us img {
-    width: 18px;
-    height: 18px;
-    vertical-align: middle;
-    margin-left: 8px;
-    top: 4px;
-}
 /* SIGN IN MODAL */
 
 .signin-modal {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.55);
+    background: rgb(0 0 0 / 55%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -286,7 +284,7 @@ header nav .nav-brand .icon-us img {
     background: #1c1c1c;
     padding: 60px 50px;
     color: white;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 25px 50px rgb(0 0 0 / 45%);
 }
 
 /* TITLE */
@@ -355,7 +353,7 @@ header nav .nav-brand .icon-us img {
 
 /* MOBILE */
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
     .signin-box {
         padding: 40px 25px;
     }
@@ -368,6 +366,7 @@ header nav .nav-brand .icon-us img {
         font-size: 18px;
     }
 }
+
 /* ============================================
    MOBILE
    ============================================ */
