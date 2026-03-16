@@ -188,3 +188,47 @@
         opacity: 1;
     }
 }
+/* ================= MOBILE FIX ================= */
+
+@media (max-width: 768px) {
+    /* remove full viewport trick */
+    .carousel.block {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* make image responsive */
+    .carousel.block > div > div:first-child {
+        height: auto;
+    }
+
+    .carousel.block > div > div:first-child img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* adjust content card */
+    .carousel.block > div > div:last-child {
+        width: 90%;
+        margin: -60px auto 0;
+        padding: 30px 25px;
+    }
+
+    /* smaller title */
+    .carousel.block h2 {
+        font-size: 26px;
+    }
+
+    /* smaller text */
+    .carousel.block p {
+        font-size: 16px;
+    }
+
+    /* move arrows */
+    .carousel .button-action-container {
+        right: 20px;
+        bottom: 20px;
+    }
+}
